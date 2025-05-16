@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electron Terminal</title>
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #terminal {
+            flex: 1;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal"></div>
+    <script src="dist/renderer.js"></script>
+</body>
+</html> 

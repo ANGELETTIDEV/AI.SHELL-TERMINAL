@@ -1,0 +1,25 @@
+{
+  "name": "electron-terminal",
+  "version": "1.0.0",
+  "description": "A terminal application built with Electron and xterm.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc && electron .",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "concurrently \"npm run watch\" \"electron .\""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "concurrently": "^8.2.2",
+    "electron": "^29.1.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "node-pty": "^1.0.0",
+    "xterm": "^5.4.0",
+    "xterm-addon-fit": "^0.8.0"
+  }
+} 
